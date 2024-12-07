@@ -17,7 +17,7 @@ export default function IconButton({icon, text, type, onClick} : IconButtonProps
           break;
     }
     return (
-        <button onClick={onClick} className={`${colorClass} w-10 h-10 px-2 py-2 rounded-md flex items-center justify-items-center`}>
+        <button onClick={onClick} className={`${colorClass} w-8 h-8 p-1 sm:w-10 sm:h-10 sm:p-2 rounded-md flex items-center justify-items-center`}>
             <img src={icon} alt={text} className="w-6 h-6 pt-1"></img>
         </button>
     );

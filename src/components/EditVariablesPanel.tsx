@@ -55,7 +55,7 @@ export default function EditVariablesPanel({isOpen, togglePanel} : EditVariables
                 <Button size={"medium"} type={"secondary"}>Rerun</Button>
             </div>
     
-            <div className="p-9 mr-14 overflow-y-auto">
+            <div className="p-4 sm:p-9 sm:mr-14 overflow-y-auto">
                 <div className="bg-dark-gray border border-light-gray rounded p-6">
                     <h3 className="text-sm">Variable Category 1</h3>
                     <div className="flex flex-wrap gap-5 mt-4">
@@ -106,7 +106,7 @@ export default function EditVariablesPanel({isOpen, togglePanel} : EditVariables
                     </div>
                 </div>
                 { isHovering &&
-                    <div className={`transition-opacity duration-500 ease-in-out 
+                    <div className={`transition-opacity duration-500 ease-in-out V
                     ${isHovering ? "opacity-100 scale-100" : "opacity-0 scale-95 pointer-events-none"
                 }`}>
                         <HoverCard 

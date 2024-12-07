@@ -12,7 +12,7 @@ interface SidebarProps {
 export default function Sidebar({isOpen} : SidebarProps) {
     if (isOpen) {
         return (
-             <div className='bg-black w-20 mt-20 pt-10 h-[130vh] justify-items-center'>
+             <div className='bg-black w-20 mt-20 pt-10 h-[260vh] justify-items-center'>
                  <div className="flex flex-col space-y-10">
                      <img src={HomeIcon} alt="Home" className="w-6 h-6" />
                      <img src={BellIcon} alt="Notifications" className="w-6 h-6" />

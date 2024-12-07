@@ -45,7 +45,7 @@ function App() {
           </div>
         }
       </span>
-        <main className="mt-[87px] px-10 py-12 w-screen rounded border border-light-gray">
+        <main className="w-screen mt-[87px] px-4 sm:px-10 py-12 rounded border border-light-gray">
             <div className='flex flex-row justify-between'>
               <div className='flex flex-row'>
                 <img src={LightningIcon} alt="Lightning" className="w-4 h-7 mr-4"></img>
@@ -84,19 +84,19 @@ function App() {
                 </div>
               </div>
             }
-            <div className="flex flex-row flex-wrap sm:flex-nowrap">
+            <div className="flex flex-row flex-wrap sm:flex-nowrap justify-center">
               <div className=" text-white text-2xl w-3/5 h-4/5 mt-14">
                 <h1>Graphs</h1>
                 <div className='bg-gray p-4 rounded border border-light-gray w-full max-w-4xl mt-4'>
                   <Graph />
                 </div>
               </div>
-              <div className="text-white text-2xl w-2/5 h-4/5 ml-5 mt-14">
-                <div className='flex flex-row justify-between'>
+              <div className="text-white text-2xl sm:w-2/5 sm:h-4/5 ml-5 mt-14">
+                <div className='flex flex-row justify-between space-x-2'>
                   <h1>Key Performance Indicators</h1>
                   <Button size={'small'} type={'secondary'}>Variables +</Button>
                 </div>
-                  <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-x-6 gap-y-6 mt-3 justify-items-stretch'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 grid-rows-2 gap-x-6 gap-y-6 mt-3 justify-items-stretch'>
                     <PerformanceCard 
                       title="Infrastructure Units" 
                       subtitle="This describes variable two and what the shown data means" 
@@ -117,9 +117,9 @@ function App() {
                       subtitle="This describes variable two and what the shown data means" 
                       number="7.03%"
                     />
-                  </div>
                 </div>
               </div>
+            </div>
         </main>
     </div>
   );

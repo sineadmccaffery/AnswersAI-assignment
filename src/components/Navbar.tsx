@@ -20,7 +20,7 @@ export default function Navbar({onClick} : NavbarProps) {
                 </div>
               </div>
     
-              <div className="flex w-full items-center justify-end mx-6">
+              <div className="hidden sm:flex sm:w-full items-center justify-end mx-6">
                 <input
                   type="text"
                   placeholder="Search"

@@ -9,22 +9,22 @@ interface ButtonProps {
 }
 
 export default function Button ({ size, type, onClick, children }: ButtonProps): ReactElement {
-  const baseClasses: string = 'text-white rounded-md flex items-center justify-center';
+  const baseClasses: string = 'px-2 py-1 text-xs text-white rounded-md flex items-center justify-center sm:w-auto';
   let sizeClass: string;
   let colorClass: string;
 
   switch (size) {
     case 'small':
-      sizeClass = 'px-3 py-2 text-sm';
+      sizeClass = 'sm:px-3 sm:py-2 sm:text-sm';
       break;
     case 'medium':
-      sizeClass = 'px-4 py-2 text-base';
+      sizeClass = 'sm:px-4 sm:py-2 sm:text-base';
       break;
     case 'large':
-      sizeClass = 'px-5 py-3 text-lg';
+      sizeClass = 'sm:px-5 sm:py-3 sm:text-lg';
       break;
     default:
-      sizeClass = 'px-4 py-2 text-base';
+      sizeClass = 'sm:px-4 sm:py-2 sm:text-base';
   }
 
   switch (type) {
