@@ -7,7 +7,7 @@ interface HoverCardProps {
 
 export default function HoverCard({title, description} : HoverCardProps) {
     return (
-        <div className="bg-gray border border-light-gray px-9 py-6 group-hover:animate-hover-effect">
+        <div className="bg-gray border border-light-gray px-9 py-6">
             <div className="flex flex-row items-center text-lg text-white">
                 <p>{title}</p>
                 <img src={InfoIcon} alt="info" className='w-4 h-4 ml-3'></img>
